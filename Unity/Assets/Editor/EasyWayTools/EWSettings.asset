@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f53e6f7492c1a4a89c7c633fc0753e, type: 3}
+  m_Name: EWSettings
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::EWScriptableObject
+  materialSearch: 2
+  materialName: 1
+  moveMaterials: 1
+  materialFolderPath: 
+  assignmentMethod: 0
+  assignmentProfilesList:
+  - profileName: Standard
+    shaderName: Standard
+    assignmentProfileItems:
+    - materialSlot: _MainTex
+      textureName: Albedo, AlbedoTransparency, Diffuse, DiffuseTransparency, BaseColor,
+        Color, BaseColorMap, ColorMap
+    - materialSlot: _MetallicGlossMap
+      textureName: Metallic, MetallicSmoothness, MetallicMap, MetallicSmooth
+    - materialSlot: _BumpMap
+      textureName: Normal, NormalMap
+    - materialSlot: _ParallaxMap
+      textureName: Height, HeightMap
+    - materialSlot: _OcclusionMap
+      textureName: AO, Occlusion, AmbientOcclusion, OcclusionMap
+    - materialSlot: _EmissionMap
+      textureName: Emission, EmissionMap, Emissive, EmissiveColor, EmissiveMap, EmissiveColorMap
+  - profileName: Standard Specular
+    shaderName: Standard (Specular setup)
+    assignmentProfileItems:
+    - materialSlot: _MainTex
+      textureName: Albedo, AlbedoTransparency, Diffuse, DiffuseTransparency, BaseColor,
+        Color, BaseColorMap, ColorMap
+    - materialSlot: _SpecGlossMap
+      textureName: Specular, SpecularSmoothness, SpecularMap, SpecularGlossiness,
+        SpecGloss, SpecSmooth
+    - materialSlot: _BumpMap
+      textureName: Normal, NormalMap
+    - materialSlot: _ParallaxMap
+      textureName: Height, HeightMap
+    - materialSlot: _OcclusionMap
+      textureName: AO, Occlusion, AmbientOcclusion, OcclusionMap
+    - materialSlot: _EmissionMap
+      textureName: Emission, EmissionMap, Emissive, EmissiveColor, EmissiveMap, EmissiveColorMap
+  - profileName: HDRP Lit
+    shaderName: HDRP/Lit
+    assignmentProfileItems:
+    - materialSlot: _BaseColorMap
+      textureName: Albedo, AlbedoTransparency, Diffuse, DiffuseTransparency, BaseColor,
+        Color, BaseColorMap, ColorMap
+    - materialSlot: _MaskMap
+      textureName: Mask, MaskMap
+    - materialSlot: _NormalMap
+      textureName: Normal, NormalMap
+    - materialSlot: _BentNormalMap
+      textureName: BentNormal, Bent, BentNormalMap
+    - materialSlot: _HeightMap
+      textureName: Height, HeightMap, Tesselation, TesselationMap, Displacement,
+        DisplacementMap
+    - materialSlot: _TangentMap
+      textureName: Tangent, TangentMap
+    - materialSlot: _AnisotropyMap
+      textureName: Anisotropy, AnisotropyMap
+    - materialSlot: _SubsurfaceMaskMap
+      textureName: Subsurface, SubsurfaceMap, SubsurfaceMask, SubsurfaceMaskMap
+    - materialSlot: _ThicknessMap
+      textureName: Thickness, ThicknessMap
+    - materialSlot: _IridescenceThicknessMap
+      textureName: IridescenceThickness, IridescenceThicknessMap, Iridescence, IridescenceMap
+    - materialSlot: _IridescenceMaskMap
+      textureName: IridescenceMaskMap, IridescenceMask
+    - materialSlot: _CoatMaskMap
+      textureName: Coat, CoatMap, CoatMask, CoatMaskMap
+    - materialSlot: _SpecularColorMap
+      textureName: Specular, SpecularMap, SpecularColor, SpecularColorMap
+    - materialSlot: _EmissiveColorMap
+      textureName: Emission, EmissionMap, Emissive, EmissiveColor, EmissiveMap, EmissiveColorMap
+    - materialSlot: _MainTex
+      textureName: Albedo, AlbedoTransparency, Diffuse, DiffuseTransparency, BaseColor,
+        Color, BaseColorMap, ColorMap
+  - profileName: URP Lit
+    shaderName: Universal Render Pipeline/Lit
+    assignmentProfileItems:
+    - materialSlot: _BaseMap
+      textureName: Albedo, AlbedoTransparency, Diffuse, DiffuseTransparency, BaseColor,
+        Color, BaseColorMap, ColorMap
+    - materialSlot: _MetallicGlossMap
+      textureName: Metallic, MetallicSmoothness, MetallicMap, MetallicSmooth
+    - materialSlot: _SpecGlossMap
+      textureName: Specular, SpecularSmoothness, SpecularMap, SpecularGlossiness,
+        SpecGloss, SpecSmooth
+    - materialSlot: _BumpMap
+      textureName: Normal, NormalMap
+    - materialSlot: _OcclusionMap
+      textureName: AO, Occlusion, AmbientOcclusion, OcclusionMap
+    - materialSlot: _EmissionMap
+      textureName: Emission, EmissionMap, Emissive, EmissiveColor, EmissiveMap, EmissiveColorMap
+    - materialSlot: _MainTex
+      textureName: Albedo, AlbedoTransparency, Diffuse, DiffuseTransparency, BaseColor,
+        Color, BaseColorMap, ColorMap

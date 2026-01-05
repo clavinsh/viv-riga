@@ -194,6 +194,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1b00df4f58d208773a8683099b5bf006, type: 3}
   m_PrefabInstance: {fileID: 1678815253}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &32998275 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 5344550647464891990, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+  m_PrefabInstance: {fileID: 3152401662757614541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &35307375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -422,7 +427,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -599,7 +604,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -831,7 +836,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -910,160 +915,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 69e4a965ec7fafb7cb9d17afc723fa05, type: 3}
   m_PrefabInstance: {fileID: 329009282}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &330585543
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 330585546}
-  - component: {fileID: 330585545}
-  - component: {fileID: 330585544}
-  - component: {fileID: 330585547}
-  - component: {fileID: 330585548}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &330585544
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
---- !u!20 &330585545
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 100
-  field of view: 90
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &330585546
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.613, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 445014422}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &330585547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
---- !u!114 &330585548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8dda607d746872aaa146e719fccc2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::cameraController
-  mouseSensitivity: 20
-  invertY: 0
-  maxLookUp: 90
-  maxLookDown: -90
 --- !u!1 &401965447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b43add781c5140246b92f82428279d8f, type: 3}
@@ -1475,8 +1326,7 @@ Transform:
   m_LocalPosition: {x: -50579, y: 6.12, z: -31082.28}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 330585546}
+  m_Children: []
   m_Father: {fileID: 522197058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &445014423
@@ -1582,7 +1432,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -1809,7 +1659,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2075,7 +1925,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2367,7 +2217,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2524,7 +2374,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2551,7 +2401,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2638,7 +2488,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2665,7 +2515,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2692,7 +2542,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2984,7 +2834,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -3385,7 +3235,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -3412,7 +3262,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -3439,7 +3289,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -3531,7 +3381,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -3883,7 +3733,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4035,7 +3885,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4062,7 +3912,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4219,7 +4069,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4311,7 +4161,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4408,7 +4258,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4500,7 +4350,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4662,7 +4512,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4689,7 +4539,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4776,7 +4626,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4808,7 +4658,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4900,7 +4750,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4927,7 +4777,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -4954,7 +4804,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5041,7 +4891,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5073,7 +4923,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5295,7 +5145,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5322,7 +5172,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5349,7 +5199,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5436,7 +5286,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5528,7 +5378,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5615,7 +5465,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5647,7 +5497,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5674,7 +5524,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5761,7 +5611,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5788,7 +5638,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6005,7 +5855,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6092,7 +5942,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6101,6 +5951,754 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6980931281233318799, guid: 33be76fa75b4643f6aa6ca5e7e0ea2c9, type: 3}
+--- !u!1 &1808629551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1808629554}
+  - component: {fileID: 1808629553}
+  - component: {fileID: 1808629552}
+  m_Layer: 0
+  m_Name: Rail Track
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1808629552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808629551}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b74686beb0670a4ea61325c0acf4411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineInstantiate
+  m_Container: {fileID: 1808629553}
+  m_ItemsToInstantiate:
+  - prefab: {fileID: 0}
+    Prefab: {fileID: 3043757271461041061, guid: a32dcbfbbd8be48a781e95d6f5087664, type: 3}
+    probability: 0
+    Probability: 0
+  m_Method: 1
+  m_Space: 0
+  m_Spacing: {x: 0.5, y: 0.5}
+  m_Up: 1
+  m_Forward: 2
+  m_PositionOffset:
+    setup: 0
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    randomX: 0
+    randomY: 0
+    randomZ: 0
+    space: 0
+  m_RotationOffset:
+    setup: 0
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    randomX: 0
+    randomY: 0
+    randomZ: 0
+    space: 0
+  m_ScaleOffset:
+    setup: 0
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    randomX: 0
+    randomY: 0
+    randomZ: 0
+    space: 0
+  m_DeprecatedInstances: []
+  m_AutoRefresh: 1
+  m_Seed: -13296
+--- !u!114 &1808629553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808629551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineContainer
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 0
+        y: 0
+        z: 0
+      TangentIn:
+        x: -0
+        y: -0
+        z: -3.9133
+      TangentOut:
+        x: 0
+        y: 0
+        z: 3.2257683
+      Rotation:
+        value:
+          x: 0.033309508
+          y: 0.6564854
+          z: 0.03769747
+          w: 0.75265956
+    - Position:
+        x: 8.800781
+        y: -0.014007568
+        z: 0.7949219
+      TangentIn:
+        x: -0
+        y: -0
+        z: -3.0963385
+      TangentOut:
+        x: 0
+        y: 0
+        z: 3.4421492
+      Rotation:
+        value:
+          x: -0.05721813
+          y: 0.6508417
+          z: -0.066997685
+          w: 0.754084
+    - Position:
+        x: 19.496094
+        y: -0.016654134
+        z: 3.0019531
+      TangentIn:
+        x: -0
+        y: -0
+        z: -3.7422333
+      TangentOut:
+        x: 0
+        y: 0
+        z: 3.9678822
+      Rotation:
+        value:
+          x: -0.019991055
+          y: 0.61207294
+          z: -0.02718925
+          w: 0.79008096
+    - Position:
+        x: 31.21875
+        y: -0.055236578
+        z: 6.6503906
+      TangentIn:
+        x: -0
+        y: -0
+        z: -3.4004848
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.4176044
+      Rotation:
+        value:
+          x: 0.06464074
+          y: 0.5815975
+          z: 0.08697139
+          w: 0.8062269
+    - Position:
+        x: 37.070312
+        y: -0.07377541
+        z: 8.716797
+      TangentIn:
+        x: -0
+        y: -0
+        z: -2.1055672
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.192189
+      Rotation:
+        value:
+          x: 0.021726077
+          y: 0.54950225
+          z: 0.031656876
+          w: 0.83460957
+    - Position:
+        x: 43.058594
+        y: -0.07347357
+        z: 11.78125
+      TangentIn:
+        x: -0
+        y: -0
+        z: -2.0378277
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1.7045211
+      Rotation:
+        value:
+          x: 0.0022826851
+          y: 0.49237752
+          z: 0.0017989252
+          w: 0.8703768
+    - Position:
+        x: 46.91797
+        y: -0.09436405
+        z: 14.474609
+      TangentIn:
+        x: -0
+        y: -0
+        z: -1.9429265
+      TangentOut:
+        x: 0
+        y: 0
+        z: 3.1636107
+      Rotation:
+        value:
+          x: 0.0035402905
+          y: 0.4492891
+          z: 0.003807786
+          w: 0.89337134
+    - Position:
+        x: 56.710938
+        y: -0.11141646
+        z: 22.207031
+      TangentIn:
+        x: -0
+        y: -0
+        z: -3.4787443
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.5004964
+      Rotation:
+        value:
+          x: 0.0038928855
+          y: 0.4368658
+          z: 0.0067095472
+          w: 0.8994932
+    - Position:
+        x: 61.785156
+        y: -0.117316365
+        z: 26.183594
+      TangentIn:
+        x: -0
+        y: -0
+        z: -2.3098037
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.6837163
+      Rotation:
+        value:
+          x: -0.0032579657
+          y: 0.43989512
+          z: -0.007863892
+          w: 0.89800876
+    - Position:
+        x: 68.6875
+        y: -0.12792718
+        z: 31.484375
+      TangentIn:
+        x: -0
+        y: -0
+        z: -4.1193023
+      TangentOut:
+        x: 0
+        y: 0
+        z: 10.08516
+      Rotation:
+        value:
+          x: -0.031917006
+          y: 0.4382522
+          z: -0.065952614
+          w: 0.8958608
+    - Position:
+        x: 109.67578
+        y: -0.12915266
+        z: 63.751953
+      TangentIn:
+        x: -0
+        y: -0
+        z: -5.752884
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1.1860125
+      Rotation:
+        value:
+          x: 0.107639514
+          y: 0.46597198
+          z: -0.056491215
+          w: 0.87640893
+    - Position:
+        x: 111.38672
+        y: -1.1647363
+        z: 64.708984
+      TangentIn:
+        x: -0
+        y: -0
+        z: -1.0098861
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.4105656
+      Rotation:
+        value:
+          x: 0.10684824
+          y: 0.4790336
+          z: -0.05752582
+          w: 0.8693682
+    - Position:
+        x: 121.73828
+        y: -1.1647347
+        z: 71.94922
+      TangentIn:
+        x: -0
+        y: -0
+        z: -3.654379
+      TangentOut:
+        x: 0
+        y: 0
+        z: 3.6181512
+      Rotation:
+        value:
+          x: 0.000000025221489
+          y: 0.6711613
+          z: -0.000000022587727
+          w: 0.74131125
+    - Position:
+        x: 133.08594
+        y: -1.1647377
+        z: 66.99219
+      TangentIn:
+        x: -0
+        y: -0
+        z: -3.639656
+      TangentOut:
+        x: 0
+        y: 0
+        z: 3.4468505
+      Rotation:
+        value:
+          x: -0.010415892
+          y: 0.9352533
+          z: 0.004681095
+          w: 0.3537946
+    - Position:
+        x: 136.23047
+        y: -0.8400611
+        z: 56.345703
+      TangentIn:
+        x: -0
+        y: -0
+        z: -4.144162
+      TangentOut:
+        x: 0
+        y: 0
+        z: 5.2735496
+      Rotation:
+        value:
+          x: -0.031868435
+          y: 0.99105996
+          z: 0.0072478447
+          w: 0.12935194
+    - Position:
+        x: 140.33984
+        y: -0.55290204
+        z: 38.839844
+      TangentIn:
+        x: -0
+        y: -0
+        z: -4.865945
+      TangentOut:
+        x: 0
+        y: 0
+        z: 4.1521144
+      Rotation:
+        value:
+          x: 0.005781477
+          y: 0.99138975
+          z: 0.011648157
+          w: -0.13029708
+    - Position:
+        x: 131.38672
+        y: -0.19403523
+        z: 29.291016
+      TangentIn:
+        x: -0
+        y: -0
+        z: -5.584953
+      TangentOut:
+        x: 0
+        y: 0
+        z: 9.956112
+      Rotation:
+        value:
+          x: -0.0014100134
+          y: 0.9206961
+          z: 0.005342904
+          w: -0.39024106
+    - Position:
+        x: 100.11328
+        y: -0.6082408
+        z: 1.8417969
+      TangentIn:
+        x: -0
+        y: -0
+        z: -4.1542497
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.78798395
+      Rotation:
+        value:
+          x: -0.019807797
+          y: 0.82486266
+          z: -0.00034247947
+          w: -0.56498593
+    - Position:
+        x: 98.61719
+        y: -0.65787375
+        z: 1.8125
+      TangentIn:
+        x: -0
+        y: -0
+        z: -0.69273376
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.2420287
+      Rotation:
+        value:
+          x: 0.014516984
+          y: -0.5475272
+          z: -0.0027250308
+          w: 0.8366576
+    - Position:
+        x: 88.17969
+        y: -0.74513
+        z: 13.517578
+      TangentIn:
+        x: -0
+        y: -0
+        z: -4.809937
+      TangentOut:
+        x: 0
+        y: 0
+        z: 4.1631274
+      Rotation:
+        value:
+          x: 0.0039949184
+          y: -0.41597113
+          z: -0.00890116
+          w: 0.9093255
+    - Position:
+        x: 78.37109
+        y: -0.6765039
+        z: 19.984375
+      TangentIn:
+        x: -0
+        y: -0
+        z: -3.5266826
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.9014235
+      Rotation:
+        value:
+          x: -0.028858354
+          y: -0.44231886
+          z: 0.060555983
+          w: 0.89434564
+    - Position:
+        x: 72.40234
+        y: -0.75391316
+        z: 25.238281
+      TangentIn:
+        x: -0
+        y: -0
+        z: -2.1365025
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1.4979229
+      Rotation:
+        value:
+          x: 0.016889561
+          y: -0.5052674
+          z: -0.019057522
+          w: 0.86258703
+    - Position:
+        x: 68.66797
+        y: -0.7913824
+        z: 26.392578
+      TangentIn:
+        x: -0
+        y: -0
+        z: -1.4920418
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.58183
+      Rotation:
+        value:
+          x: -0.009656106
+          y: 0.7558223
+          z: 0.007639006
+          w: -0.65466106
+    - Position:
+        x: 58.91797
+        y: -0.7023565
+        z: 19.917969
+      TangentIn:
+        x: -0
+        y: -0
+        z: -5.4474626
+      TangentOut:
+        x: 0
+        y: 0
+        z: 12.598991
+      Rotation:
+        value:
+          x: 0.017862052
+          y: 0.8817132
+          z: -0.0073022745
+          w: -0.471391
+    - Position:
+        x: 6.953125
+        y: -0.68234205
+        z: -15.001953
+      TangentIn:
+        x: -0
+        y: -0
+        z: -14.419176
+      TangentOut:
+        x: 0
+        y: 0
+        z: 7.8517246
+      Rotation:
+        value:
+          x: -0.0029663404
+          y: 0.8309315
+          z: 0.00087446155
+          w: -0.5563661
+    - Position:
+        x: -11.277344
+        y: -0.7554922
+        z: -18.50586
+      TangentIn:
+        x: -0
+        y: -0
+        z: -5.822691
+      TangentOut:
+        x: 0
+        y: 0
+        z: 5.2116737
+      Rotation:
+        value:
+          x: -0.0041677696
+          y: 0.7421017
+          z: 0.0011132769
+          w: -0.6702735
+    - Position:
+        x: -26.148438
+        y: -0.8134733
+        z: -18.705078
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1.5471288
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1.5471288
+      Rotation:
+        value:
+          x: 0.0038065843
+          y: -0.47076756
+          z: -0.00044946116
+          w: 0.8822489
+    - Position:
+        x: -31.644531
+        y: -0.28242683
+        z: -10.533203
+      TangentIn:
+        x: -0
+        y: -0
+        z: -2.399878
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.7124262
+      Rotation:
+        value:
+          x: -0.021361116
+          y: 0.111404054
+          z: 0.045658376
+          w: 0.9924959
+    - Position:
+        x: -20.824219
+        y: -0.049455762
+        z: -4.0839844
+      TangentIn:
+        x: -0
+        y: -0
+        z: -3.7028704
+      TangentOut:
+        x: 0
+        y: 0
+        z: 2.9906597
+      Rotation:
+        value:
+          x: -0.041444067
+          y: 0.56161994
+          z: -0.05002177
+          w: 0.8248414
+    - Position:
+        x: -12.7890625
+        y: -0.0038369894
+        z: -2.359375
+      TangentIn:
+        x: -0
+        y: -0
+        z: -0.82182777
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.82182777
+      Rotation:
+        value:
+          x: -0.05278758
+          y: 0.6263292
+          z: -0.060918428
+          w: 0.77538
+    - Position:
+        x: -12.7890625
+        y: -0.0038369894
+        z: -2.359375
+      TangentIn:
+        x: -0
+        y: -0
+        z: -1.3004875
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1.3004875
+      Rotation:
+        value:
+          x: -0.05168164
+          y: 0.63766587
+          z: -0.061858352
+          w: 0.766084
+    m_MetaData:
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    m_Closed: 1
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink:
+    - Knots:
+      - Spline: 0
+        Knot: 29
+      - Spline: 0
+        Knot: 30
+--- !u!4 &1808629554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808629551}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -50736.348, y: 1.1647364, z: -31141.977}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1812188824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1189a24c2766b1296acef6ce84ceaf51, type: 3}
@@ -6119,7 +6717,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6206,7 +6804,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6293,7 +6891,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6320,7 +6918,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6347,7 +6945,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6434,7 +7032,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6558,7 +7156,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6645,7 +7243,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6732,7 +7330,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6889,7 +7487,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -6916,7 +7514,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7003,7 +7601,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7160,7 +7758,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7247,7 +7845,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7274,7 +7872,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7301,7 +7899,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7328,7 +7926,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7355,7 +7953,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7387,7 +7985,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7414,7 +8012,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7441,7 +8039,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7528,7 +8126,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7555,7 +8153,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7582,7 +8180,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7609,7 +8207,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7696,7 +8294,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7788,7 +8386,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7875,7 +8473,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7902,7 +8500,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -7929,7 +8527,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -8016,7 +8614,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -8103,7 +8701,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -8130,7 +8728,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -8157,7 +8755,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -8184,7 +8782,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -8271,7 +8869,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -8358,7 +8956,7 @@ MeshCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -8367,6 +8965,176 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6980931281233318799, guid: deecdd3492d41bc18b93acc17dcb4b27, type: 3}
+--- !u!1001 &287449791760156458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 452666343741770538, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: power
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50703.266
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4108
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -31134.674
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.80850375
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.588491
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466682554035592253, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3058142115125066675, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: rail
+      value: 
+      objectReference: {fileID: 1808629553}
+    - target: {fileID: 5276090966350861904, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_XMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276090966350861904, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_YMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276090966350861904, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_ZMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276090966350861904, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 32998275}
+    - target: {fileID: 5638055584832447161, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00016868114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638055584832447161, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5842283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638055584832447161, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.3841443
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638055584832447161, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96418124
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638055584832447161, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2652444
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638055584832447161, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000029802326
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638055584832447161, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000014901163
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086242251159791474, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+      propertyPath: m_Name
+      value: train_engine_cube
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6cac4e0e61d669851b19a14091c3c8ea, type: 3}
+--- !u!1001 &3152401662757614541
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1557606651468193012, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: rail
+      value: 
+      objectReference: {fileID: 1808629553}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50705.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4108
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -31135.533
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.80850375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.588491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409472692491443901, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937266491506948778, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
+      propertyPath: m_Name
+      value: train_cart
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 33b67549a35d7dfe89c735f6bbeb5fd7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8375,3 +9143,6 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1856834693}
   - {fileID: 522197058}
+  - {fileID: 1808629554}
+  - {fileID: 287449791760156458}
+  - {fileID: 3152401662757614541}

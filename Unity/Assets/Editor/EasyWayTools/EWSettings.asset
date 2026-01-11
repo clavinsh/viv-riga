@@ -15,7 +15,7 @@ MonoBehaviour:
   materialSearch: 2
   materialName: 1
   moveMaterials: 1
-  materialFolderPath: 
+  materialFolderPath: /home/artursk/programming/viv-riga/Unity/Assets/Meshes
   assignmentMethod: 0
   assignmentProfilesList:
   - profileName: Standard

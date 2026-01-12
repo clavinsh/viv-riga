@@ -1,12 +1,32 @@
 import bpy
 import math
 
+def offset_to_origin(obj, offset_x, offset_z, offset_y):
+    """Offset all vertex coordinates to bring model to origin"""
+    bpy.ops.object.select_all(action='DESELECT')
+    obj.select_set(True)
+    bpy.context.view_layer.objects.active = obj
+    
+    # Apply any existing transforms first so vertices are in world space
+    bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
+    
+    # Move vertices directly in object data
+    for vertex in obj.data.vertices:
+        vertex.co.x += offset_x
+        vertex.co.y += offset_z  # Y in Blender corresponds to Z in Unity (vertical axis)
+        vertex.co.z += offset_y
+    
+    # Update mesh
+    obj.data.update()
+    
+    print(f"Offset {obj.name} vertices by X: {-offset_x}, Y: {-offset_z}")
+
 def rotate(obj):
     bpy.ops.object.empty_add(type='PLAIN_AXES', location=(0, 0, 0))
     empty = bpy.context.active_object
     
     obj.parent = empty
-    empty.rotation_euler.x = math.radians(-90)
+    empty.rotation_euler.x = math.radians(180)
     
     bpy.ops.object.select_all(action='DESELECT')
     obj.select_set(True)
@@ -95,28 +115,11 @@ def clean_up(obj):
     bpy.ops.object.select_all(action='DESELECT')
     largest.select_set(True)
     bpy.context.view_layer.objects.active = largest
-    
-def offset_to_origin(obj, offset_x, offset_z):
-    """Offset object to origin. In Blender, X is X and Y is Z (different axes than Unity)"""
-    bpy.ops.object.select_all(action='DESELECT')
-    obj.select_set(True)
-    bpy.context.view_layer.objects.active = obj
-    
-    bpy.ops.object.mode_set(mode='EDIT')
-    bpy.ops.mesh.select_all(action='SELECT')
-    
-    # In Blender: X=X, Y=Up, Z=-Forward
-    # Unity X offset -> Blender X offset
-    # Unity Z offset -> Blender -Y offset (because Unity Z is Blender's -Y looking from above)
-    bpy.ops.transform.translate(value=(-offset_x, 0, offset_z))
-    
-    bpy.ops.object.mode_set(mode='OBJECT')
-    print(f"Offset {obj.name} by X: -{offset_x}, Z: +{offset_z}")
 
 # Execute preprocessing on the merged_obj
 print(f"Starting preprocessing on {merged_obj.name}")
-offset_to_origin(merged_obj, 50689.09, 31198.79) # Milda zero point
-#rotate(merged_obj)
+rotate(merged_obj)
+offset_to_origin(merged_obj, 50689.09, 31198.79, 300.0)
 retopology(merged_obj)
 clean_up(merged_obj)
 print(f"Preprocessing complete. Active object: {bpy.context.active_object.name}")

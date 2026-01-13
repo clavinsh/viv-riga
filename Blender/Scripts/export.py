@@ -4,8 +4,9 @@ import traceback
 from pathlib import Path
 
 """ Export and preprocess n objects from import_path to export_path. """
-import_path = "/home/dust/Downloads/Riga_Part_1/"
-export_path = "/home/dust/Documents/Unity_projects/viv-riga/Unity/Assets/Meshes/P67/"
+import_path = "/home/artursk/Desktop/Arturs_Klavins/Arturs_Klavins/Riga_Part_13"
+export_path = "/home/artursk/Desktop/Arturs_Klavins/Arturs_Klavins/Riga_Part_13/export/"
+
 n = 5
 skip_existing = False  # Set to True to skip already exported files
 

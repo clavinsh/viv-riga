@@ -2,8 +2,8 @@ import bpy
 import os
 
 """ Import and preprocess n objects from import_path. """
-import_path = ""
-n = 1
+import_path = "/home/artursk/Desktop/Arturs_Klavins/Arturs_Klavins/Riga_Part_13"
+n = 10
 
 subdirs = [d for d in os.listdir(import_path) 
            if os.path.isdir(os.path.join(import_path, d))]

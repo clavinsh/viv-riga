@@ -42,9 +42,16 @@ def offset_to_origin(obj, offset_x, offset_z, offset_y):
                     bpy.ops.object.origin_set(type='ORIGIN_GEOMETRY', center='BOUNDS')
                 break
 
+    bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
+
+    # Reset object location (origin is now at world zero, mesh stays in place)
+    bpy.ops.object.origin_set(type='ORIGIN_CURSOR')
+    obj.location = (0, 0, 0)
+
     print(f"Offset {obj.name} vertices by X: {-offset_x}, Y: {-offset_z}, Z: {-offset_y}")
 
 def rotate(obj):
+
     """Rotate object around its own center, preserving world position."""
     bpy.ops.object.select_all(action='DESELECT')
     obj.select_set(True)

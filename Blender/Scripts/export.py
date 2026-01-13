@@ -112,6 +112,9 @@ for subdir in subdirs:
                         bpy.ops.object.select_all(action='DESELECT')
                         merged_obj.select_set(True)
                         bpy.context.view_layer.objects.active = merged_obj
+                        # Apply all transforms before export
+                        bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
+
                         bpy.ops.export_scene.fbx(
                             filepath=full_export_path,
                             use_selection=True,
@@ -120,7 +123,9 @@ for subdir in subdirs:
                             axis_forward='-Z',
                             axis_up='Y',
                             global_scale=1.0,
-                            bake_space_transform=False
+                            apply_scale_options='FBX_SCALE_NONE',
+                            apply_unit_scale=True,
+                            bake_space_transform=True  # Bake axis conversion into mesh
                         )
                         bpy.data.objects.remove(merged_obj, do_unlink=True)
                         print(f"OK: {subdir}/{file} -> {obj_name}.fbx")

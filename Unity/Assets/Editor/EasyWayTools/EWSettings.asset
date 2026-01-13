@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp-Editor::EWScriptableObject
   materialSearch: 2
   materialName: 1
-  moveMaterials: 1
-  materialFolderPath: /home/artursk/programming/viv-riga/Unity/Assets/Meshes
+  moveMaterials: 0
+  materialFolderPath: /home/artursk/programming/viv-riga/Unity/Assets
   assignmentMethod: 0
   assignmentProfilesList:
   - profileName: Standard

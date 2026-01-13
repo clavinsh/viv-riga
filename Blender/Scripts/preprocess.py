@@ -7,19 +7,27 @@ def offset_to_origin(obj, offset_x, offset_z, offset_y):
     obj.select_set(True)
     bpy.context.view_layer.objects.active = obj
     
-    # Apply any existing transforms first so vertices are in world space
+    # Set origin to geometry first - ensures origin is at the actual geometry
+    bpy.ops.object.origin_set(type='ORIGIN_GEOMETRY')
+    
+    # Apply ALL transforms (location, rotation, scale) to bake them into vertices
     bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
     
-    # Move vertices directly in object data
+    # Move vertices directly in object data (subtract to bring to origin)
     for vertex in obj.data.vertices:
-        vertex.co.x += offset_x
-        vertex.co.y += offset_z  # Y in Blender corresponds to Z in Unity (vertical axis)
-        vertex.co.z += offset_y
+        vertex.co.x -= offset_x
+        vertex.co.y -= offset_z  # Y in Blender corresponds to Z in Unity (vertical axis)
+        vertex.co.z -= offset_y
     
     # Update mesh
     obj.data.update()
     
-    print(f"Offset {obj.name} vertices by X: {-offset_x}, Y: {-offset_z}")
+    # Reset object transform to identity (location, rotation, scale)
+    obj.location = (0, 0, 0)
+    obj.rotation_euler = (0, 0, 0)
+    obj.scale = (1, 1, 1)
+    
+    print(f"Offset {obj.name} vertices by X: {-offset_x}, Y: {-offset_z}, Z: {-offset_y}")
 
 def rotate(obj):
     bpy.ops.object.empty_add(type='PLAIN_AXES', location=(0, 0, 0))
@@ -33,8 +41,13 @@ def rotate(obj):
     bpy.context.view_layer.objects.active = obj
     
     bpy.ops.object.parent_clear(type='CLEAR_KEEP_TRANSFORM')
-    bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
+    bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
     bpy.data.objects.remove(empty, do_unlink=True)
+    
+    # Reset transform to identity
+    obj.location = (0, 0, 0)
+    obj.rotation_euler = (0, 0, 0)
+    obj.scale = (1, 1, 1)
 
 def retopology(obj):
     """ Merge by distance and decimate """
@@ -118,8 +131,8 @@ def clean_up(obj):
 
 # Execute preprocessing on the merged_obj
 print(f"Starting preprocessing on {merged_obj.name}")
-rotate(merged_obj)
 offset_to_origin(merged_obj, 50689.09, 31198.79, 300.0)
+rotate(merged_obj)
 retopology(merged_obj)
 clean_up(merged_obj)
 print(f"Preprocessing complete. Active object: {bpy.context.active_object.name}")

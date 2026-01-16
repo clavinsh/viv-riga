@@ -9,53 +9,38 @@ using UnityEngine.Splines;
 public class RailCart : MonoBehaviour
 {
     [SerializeField] private SplineContainer rail = null;
-
     private Spline currentSpline;
-
     private Rigidbody rb;
-    private Quaternion initialRotationOffset;
-
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-
         currentSpline = rail.Splines[0];
-
-        var native = new NativeSpline(currentSpline);
-        Vector3 localPosition = rail.transform.InverseTransformPoint(transform.position);
-        SplineUtility.GetNearestPoint(native, localPosition, out float3 nearest, out float t);
-
-        Vector3 forward = Vector3.Normalize(rail.transform.TransformDirection(native.EvaluateTangent(t)));
-        Vector3 up = rail.transform.TransformDirection(native.EvaluateUpVector(t));
-        Quaternion splineRotation = Quaternion.LookRotation(forward, up);
-
-        // Store the difference between our current rotation and the spline's rotation
-        initialRotationOffset = Quaternion.Inverse(splineRotation) * transform.rotation;
     }
 
     private void FixedUpdate()
     {
         var native = new NativeSpline(currentSpline);
-
         Vector3 localPosition = rail.transform.InverseTransformPoint(transform.position);
         float distance = SplineUtility.GetNearestPoint(native, localPosition, out float3 nearest, out float t);
-
+        
         transform.position = rail.transform.TransformPoint(nearest);
-
+        
         Vector3 forward = Vector3.Normalize(rail.transform.TransformDirection(native.EvaluateTangent(t)));
-        Vector3 up = rail.transform.TransformDirection(native.EvaluateUpVector(t));
-
-        Quaternion splineRotation = Quaternion.LookRotation(forward, up);
-        transform.rotation = splineRotation * initialRotationOffset;
-
-        Vector3 trackDirection = forward;
-
+        
+        // Flatten to horizontal - only rotate around Y axis
+        forward.y = 0;
+        if (forward.sqrMagnitude > 0.0001f)
+        {
+            transform.rotation = Quaternion.LookRotation(forward.normalized, Vector3.up);
+        }
+        
+        // Get full 3D tangent for velocity direction
+        Vector3 trackDirection = Vector3.Normalize(rail.transform.TransformDirection(native.EvaluateTangent(t)));
         if (Vector3.Dot(rb.linearVelocity, trackDirection) < 0)
         {
             trackDirection *= -1;
         }
-
         rb.linearVelocity = rb.linearVelocity.magnitude * trackDirection;
     }
 }

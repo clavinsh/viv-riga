@@ -148,11 +148,11 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Yellow.001
-    second: {fileID: 2100000, guid: 554ba05d6de17b1db8e3a805b2d70469, type: 2}
+    second: {fileID: 2100000, guid: 41aedb4c1fa29a2da8a5bb65f8c618b6, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
